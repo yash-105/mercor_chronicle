@@ -1,0 +1,66 @@
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  top: 2vh;
+  position: sticky;
+  margin-top: 2vh;
+  /* background-color: green; */
+}
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2em;
+  width: 3rem;
+  height: 3rem;
+  background: white;
+  border-radius: 50%;
+  padding-left: 0.5vw;
+  padding-bottom: 0.5vw;
+  padding-right: 0.5vw;
+  padding-top: 0.5vw;
+  position: static;
+  margin-left: 2vw;
+  border: 0px;
+}
+.logo img {
+  width: 2rem;
+  background: "white";
+}
+
+.logo h1 {
+  color: white;
+}
+.join-btn {
+  background: white;
+  padding: 0.815rem 1.232rem;
+  border-radius: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 2vw;
+  transform: rotateX(0deg);
+  transition: background 0.4s linear;
+  border: 0px;
+}
+.join-btn:hover > span {
+  animation: joinbtn-animation 1s ease-in-out;
+}
+
+@keyframes joinbtn-animation {
+  0% {
+    transform: rotateX(0deg);
+  }
+  50% {
+    transform: rotateX(90deg) translateY(-10%);
+  }
+  100% {
+    transform: rotateX(0deg);
+  }
+}
+.join-btn:hover {
+  background-color: #a594fd;
+}
+button:hover {
+  cursor: pointer;
+}
